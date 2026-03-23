@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Smart Study</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animate"></div>
+
+    <div class="container">
+        <header>
+            <h1 class="glow-text">SMART STUDY <span>ASSISTANT</span></h1>
+            <p class="subtitle">Elite edition</p>
+        </header>
+
+       <div class="search-wrapper">
+    <div class="search-box">
+        <input type="text" id="topicInput" placeholder="Enter study coordinates (e.g. Quantum Computing)...">
+        <button id="generateBtn">
+            <span class="btn-text">ENTER</span>
+            <div class="btn-glow"></div>
+        </button>
+    </div>
+</div>
+        <!-- Techy Loader -->
+        <div id="loading" class="hidden">
+            <div class="loader-circle"></div>
+            <p class="scanning-text">SCANNING...</p>
+        </div>
+
+        <div id="resultSection" class="hidden">
+            <div class="glass-card fade-in">
+                <div class="card-header"><span class="icon">📝</span>Notes</div>
+                <div id="notesContent" class="content-area"></div>
+            </div>
+
+            <div class="grid-row">
+                <div class="glass-card fade-in delay-1">
+                    <div class="card-header"><span class="icon">💡</span> STRATEGY</div>
+                    <ul id="guidanceList"></ul>
+                </div>
+
+                <div class="glass-card fade-in delay-2">
+                    <div class="card-header"><span class="icon">🎥</span> VISUAL ARCHIVE</div>
+                    <div id="videoGrid" class="video-grid"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
